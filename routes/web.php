@@ -1,8 +1,7 @@
 <?php
 
-use App\Http\Controllers\MahasiswaController;
+use App\Http\Controllers\LaporanController;
 
-Route::get('/form', [MahasiswaController::class, 'form']);
-Route::post('/simpan', [MahasiswaController::class, 'simpan']);
-Route::get('/daftar-mahasiswa', [MahasiswaController::class, 'daftar']);
-    
+Route::get('/lapor', [LaporanController::class, 'form']);
+Route::post('/simpan-laporan', [LaporanController::class, 'simpan']);
+Route::get('/daftar-laporan', [LaporanController::class, 'daftar']);
